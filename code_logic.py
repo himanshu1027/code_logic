@@ -98,5 +98,4 @@ for text_output in text_outputs:
 
 https://github.com/premal16/Paddel_OCR
 
-
-(?P<name>\w+):\s+(?P<percentage>\d+)%\s+\(left_x:\s+(?P<left_x>[-\d]+)\s+top_y:\s+(?P<top_y>[-\d+])\s+width:\s+(?P<width>\d+)\s+height:\s+(?P<height>\d+)\)
+/(?P<name>\w+):\s+(?P<percentage>\d+)%\s+\(left_x:\s+(?P<left_x>[-\d]+)\s+top_y:\s+(?P<top_y>[-\d]+)\s+width:\s+(?P<width>\d+)\s+height:\s+(?P<height>\d+)\)/gm
