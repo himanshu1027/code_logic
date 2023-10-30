@@ -94,3 +94,6 @@ text_outputs = extract_yolo_output_text_with_paddleocr(s_output)
 for text_output in text_outputs:
   print(text_output)
 
+
+
+https://github.com/premal16/Paddel_OCR
