@@ -99,3 +99,22 @@ for text_output in text_outputs:
 https://github.com/premal16/Paddel_OCR
 
 /(?P<name>\w+):\s+(?P<percentage>\d+)%\s+\(left_x:\s+(?P<left_x>[-\d]+)\s+top_y:\s+(?P<top_y>[-\d]+)\s+width:\s+(?P<width>\d+)\s+height:\s+(?P<height>\d+)\)/gm
+
+
+
+if ',' in text and '.' in text:
+  first_comma_index = text.find(",")
+  first_dot_index = text.find(".")
+
+  if first_comma_index >= 0 and first_dot_index >= 0:
+      if first_comma_index < first_dot_index:
+          text = text.replace(",","")
+      else:
+          text = text.replace(".","")
+          text = text.replace(",",".")
+elif ',' in text and '.' not in text:
+  data_text = text.split(',')
+  if len(data_text[1]) >= 3:
+    text = text.replace(",","")
+  elif len(data_text[1]) <= 2:
+    text = text.replace(",",".") 
